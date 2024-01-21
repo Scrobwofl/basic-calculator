@@ -13,31 +13,33 @@
     </header>
     <section id="calculator-body">
       <div id="screen-container">
+        <p id="history">0.00</p>
         <h2 id="output-text">0.00</h2>
       </div>
       <div id="buttons-container">
         <div id="numbers-container">
-          <button class="btn" id="btn-01">1</button>
-          <button class="btn" id="btn-02">2</button>
-          <button class="btn" id="btn-03">3</button>
-          <button class="btn" id="btn-04">4</button>
-          <button class="btn" id="btn-05">5</button>
-          <button class="btn" id="btn-06">6</button>
-          <button class="btn" id="btn-08">8</button>
-          <button class="btn" id="btn-07">7</button>
-          <button class="btn" id="btn-09">9</button>
-          <button class="btn bigger-text" id="btn-point">.</button>
+          <button class="btn" id="btn-01" data-number="1">1</button>
+          <button class="btn" id="btn-02" data-number="2">2</button>
+          <button class="btn" id="btn-03" data-number="3">3</button>
+          <button class="btn" id="btn-04" data-number="4">4</button>
+          <button class="btn" id="btn-05" data-number="5">5</button>
+          <button class="btn" id="btn-06" data-number="6">6</button>
+          <button class="btn" id="btn-08" data-number="7">8</button>
+          <button class="btn" id="btn-07" data-number="8">7</button>
+          <button class="btn" id="btn-09" data-number="9">9</button>
           <button class="btn" id="btn-00">0</button>
+          <button class="btn" id="btn-point" data-point=".">.</button>
         </div>
         <div id="operators-container">
-          <button class="btn" id="btn-clear">Clear</button>
-          <button class="btn bigger-text" id="btn-multiply">*</button>
-          <button class="btn bigger-text" id="btn-divide">/</button>
-          <button class="btn bigger-text" id="btn-add">+</button>
-          <button class="btn bigger-text" id="btn-subtract">-</button>
-          <button class="btn bigger-text" id="btn-equals">=</button>
+          <button class="btn" data-clear="clear" id="btn-clear">*</button>
+          <button class="btn" data-operator="*" id="btn-multiply">*</button>
+          <button class="btn" data-operator="+" id="btn-add">+</button>
+          <button class="btn" data-operator="-" id="btn-subtract">-</button>
+          <button class="btn" data-operator="/" id="btn-divide">/</button>
+          <button class="btn" data-operator="=" id="btn-equals">=</button>
         </div>
       </div>
     </section>
+    <footer>Howe Creative &copy; 2024</footer>
   </body>
 </html>

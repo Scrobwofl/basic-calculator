@@ -42,13 +42,11 @@ header {
   align-content: center;
   width: 80%;
   height: 100%;
-  background-color: #cbb279;
   border-radius: 2em;
-  padding: 1em;
   margin-bottom: 3em;
 }
 h1 {
-  color: #537188;
+  color: #cbb279;
   grid-area: header;
   font-size: 3em;
   margin-top: 1em;
@@ -83,10 +81,6 @@ button:active {
   transform: scale(0.9);
 }
 
-.bigger-text {
-  font-size: 1.4em;
-}
-
 #calculator-body {
   grid-area: calculator;
   display: flex;
@@ -99,22 +93,29 @@ button:active {
   border-radius: 2em;
   padding: 1em;
   background-color: #e1d4bb;
+  box-shadow: 0px 5px 6px 2px rgba(0, 0, 0, 0.2);
 }
 
 #screen-container {
   width: 100%;
-  height: 4rem;
   margin-bottom: 1em;
   border: 1px solid black;
   background-color: lightgray;
   border-radius: 1em 1em 0 0;
-  padding: 0.5em;
+  padding: 1em 0.9em;
   font-size: 1.5em;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
   align-content: flex-end;
+
   /* overflow: scroll; */
+}
+
+#history {
+  align-self: flex-start;
+  color: #537188;
 }
 
 #output-text {
@@ -157,4 +158,14 @@ button:active {
 #btn-00 {
   width: 6em;
   border-radius: 2em;
+}
+
+footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 1em;
 }

@@ -1,14 +1,35 @@
-// const yourName = prompt("What is your name?");
-
-// function sayHello(yourName) {
-//   console.log("Hello " + yourName + "!");
-// }
-
-// sayHello(yourName);
-
+console.log("App conncted...");
 // function add(a, b) {
 //   return a + b;
 // }
+
+const HISTORY = document.querySelector("#history");
+const OUTPUT = document.querySelector("#output-text");
+
+const BTN_CNTNR = document.getElementById(".buttons-container");
+
+let values = [0, 10, 20];
+let outputValue = values[values.length - 1];
+let currentValue;
+let operatorValue;
+
+OUTPUT.innerHTML = outputValue;
+HISTORY.innerHTML = values.join(" ");
+
+BTN_CNTNR.addEventListener("click", function (event) {
+  if (event.target.classList.contains("btn")) {
+    // Retrieve the data-number attribute and convert it to a number
+    const number = parseInt(event.target.getAttribute("data-number"), 10);
+
+    // Now you can use the number in your logic
+    console.log("Number from button:", number);
+    // ... Your code to handle the number ...
+  }
+});
+
+// Ouput something to the screen
+
+// Handle Inputs and pass to function
 
 //Generate a random rounded number between 0 and 10.
 let aRand = Math.floor(Math.random() * 10);
